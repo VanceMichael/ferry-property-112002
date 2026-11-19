@@ -42,7 +42,7 @@
   },
   {
     "record": "counters-4",
-    "availableFrom": 3,
+    "availableFrom": 2,
     "kind": "claim",
     "payload": {
       "claim": "A9",
