@@ -1,0 +1,63 @@
+[
+  {
+    "record": "connection-1",
+    "availableFrom": 1,
+    "kind": "shuttle",
+    "payload": {
+      "bus": "B9",
+      "pier": "新埠",
+      "departs": "09:38",
+      "minMinutes": 6,
+      "seats": {
+        "A1": "无障碍",
+        "B2": "普通"
+      },
+      "rank": 1
+    }
+  },
+  {
+    "record": "connection-2",
+    "availableFrom": 1,
+    "kind": "walkway",
+    "payload": {
+      "pier": "新埠",
+      "seatType": "无障碍",
+      "open": true,
+      "effective": "09:00"
+    }
+  },
+  {
+    "record": "connection-3",
+    "availableFrom": 2,
+    "kind": "signoff",
+    "payload": {
+      "signoff": "D9",
+      "bus": "B9",
+      "seats": {
+        "A1": "L-02"
+      },
+      "time": "09:30"
+    }
+  },
+  {
+    "record": "connection-4",
+    "availableFrom": 4,
+    "kind": "walkway",
+    "payload": {
+      "pier": "新埠",
+      "seatType": "无障碍",
+      "open": false,
+      "effective": "09:28"
+    }
+  },
+  {
+    "record": "connection-5",
+    "availableFrom": 4,
+    "kind": "gap",
+    "payload": {
+      "pier": "白屿",
+      "from": "09:45",
+      "until": "10:15"
+    }
+  }
+]

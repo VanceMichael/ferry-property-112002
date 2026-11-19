@@ -1,0 +1,77 @@
+[
+  {
+    "record": "ship-1",
+    "availableFrom": 1,
+    "kind": "alias",
+    "payload": {
+      "terminal": "南栈",
+      "shipRun": "014",
+      "sailing": "R2-014"
+    }
+  },
+  {
+    "record": "ship-2",
+    "availableFrom": 1,
+    "kind": "alias",
+    "payload": {
+      "terminal": "新埠",
+      "shipRun": "014",
+      "sailing": "R2-016"
+    }
+  },
+  {
+    "record": "ship-3",
+    "availableFrom": 2,
+    "kind": "scan",
+    "payload": {
+      "terminal": "新埠",
+      "shipRun": "014",
+      "scan": "S8",
+      "coupon": "L-02",
+      "kind": "out",
+      "pier": "新埠",
+      "stop": 2,
+      "time": "09:29"
+    }
+  },
+  {
+    "record": "ship-4",
+    "availableFrom": 3,
+    "kind": "scan",
+    "payload": {
+      "terminal": "新埠",
+      "shipRun": "014",
+      "scan": "S8",
+      "coupon": "L-02",
+      "kind": "out",
+      "pier": "新埠",
+      "stop": 2,
+      "time": "09:29"
+    }
+  },
+  {
+    "record": "ship-5",
+    "availableFrom": 3,
+    "kind": "alias",
+    "payload": {
+      "terminal": "装载台",
+      "shipRun": "B14",
+      "sailing": "R2-014"
+    }
+  },
+  {
+    "record": "ship-6",
+    "availableFrom": 3,
+    "kind": "scan",
+    "payload": {
+      "terminal": "装载台",
+      "shipRun": "B14",
+      "scan": "S9",
+      "coupon": "L-01",
+      "kind": "out",
+      "pier": "新埠",
+      "stop": 2,
+      "time": "09:28"
+    }
+  }
+]

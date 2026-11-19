@@ -1,0 +1,71 @@
+[
+  {
+    "record": "sailing-1",
+    "availableFrom": 1,
+    "kind": "plan",
+    "payload": {
+      "sailing": "R2-014",
+      "ship": "海栈",
+      "stops": [
+        [
+          1,
+          "南栈",
+          "09:00"
+        ],
+        [
+          2,
+          "桥湾",
+          "09:25"
+        ],
+        [
+          3,
+          "白屿",
+          "09:55"
+        ]
+      ]
+    }
+  },
+  {
+    "record": "sailing-2",
+    "availableFrom": 1,
+    "kind": "plan",
+    "payload": {
+      "sailing": "R2-016",
+      "ship": "海栈",
+      "stops": [
+        [
+          1,
+          "南栈",
+          "09:05"
+        ],
+        [
+          2,
+          "新埠",
+          "09:27"
+        ]
+      ]
+    }
+  },
+  {
+    "record": "sailing-3",
+    "availableFrom": 2,
+    "kind": "change",
+    "payload": {
+      "sailing": "R2-014",
+      "stop": 2,
+      "alternate": "新埠",
+      "effective": "09:15"
+    }
+  },
+  {
+    "record": "sailing-4",
+    "availableFrom": 4,
+    "kind": "change",
+    "payload": {
+      "sailing": "R2-014",
+      "stop": 2,
+      "alternate": "桥湾",
+      "effective": "09:41"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "sources": [
+    "sailing",
+    "ship",
+    "tickets",
+    "connection"
+  ],
+  "stages": 4,
+  "originals": [],
+  "originalStages": {},
+  "digests": {}
+}

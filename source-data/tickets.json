@@ -1,0 +1,35 @@
+[
+  {
+    "record": "tickets-1",
+    "availableFrom": 1,
+    "kind": "coupon",
+    "payload": {
+      "coupon": "L-01",
+      "sailing": "R2-014",
+      "stop": 2,
+      "seatType": "无障碍"
+    }
+  },
+  {
+    "record": "tickets-2",
+    "availableFrom": 1,
+    "kind": "coupon",
+    "payload": {
+      "coupon": "L-02",
+      "sailing": "R2-016",
+      "stop": 2,
+      "seatType": "无障碍"
+    }
+  },
+  {
+    "record": "tickets-3",
+    "availableFrom": 1,
+    "kind": "coupon",
+    "payload": {
+      "coupon": "L-03",
+      "sailing": "R2-014",
+      "stop": 3,
+      "seatType": "普通"
+    }
+  }
+]
