@@ -33,6 +33,17 @@ export async function start({ port = 0, host = '127.0.0.1', portal } = {}) {
         return;
       }
       if (portal && await portal(request, response, url, stage)) return;
+      if (url.pathname === '/counter-receipt' && request.method === 'GET') {
+        const point = url.searchParams.get('point');
+        const claim = url.searchParams.get('claim');
+        const receipt = sources.get('storage').find((event) => event.availableFrom <= stage &&
+          event.kind === 'released' && event.payload.point === point && event.payload.claim === claim);
+        const delayed = claim === 'A7' && point === '西岸' && stage === 2;
+        if (receipt) sendJson(response, 200, receipt.payload);
+        else if (delayed) sendJson(response, 202, { case: claim, state: '等待柜台确认' });
+        else sendJson(response, 404, { case: claim, state: '该柜台没有交出回执' });
+        return;
+      }
       if (request.method !== 'GET') {
         sendJson(response, 405, { error: '来源仅支持读取' });
         return;

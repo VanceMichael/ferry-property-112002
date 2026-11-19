@@ -54,3 +54,16 @@ test('资料在指定回放阶段从来源完整分页返回', async (t) => {
   assert.equal((await fetch(`${url}/source/missing`)).status, 404);
   t.diagnostic(`${index.sources.length} 处来源、${index.stages} 个阶段、${index.originals.length} 份原件`);
 });
+
+test('受理柜台可追问交出回执，另一岸的缺件不改变其状态', async (t) => {
+  const { server, url } = await start();
+  t.after(() => new Promise((resolve) => server.close(resolve)));
+  const query = (point) => fetch(url + '/counter-receipt?' + new URLSearchParams({ point, claim: 'A7' }));
+  await fetch(url + '/control?stage=2', { method: 'POST' });
+  assert.equal((await query('西岸')).status, 202);
+  assert.equal((await query('东岸')).status, 404);
+  await fetch(url + '/control?stage=3', { method: 'POST' });
+  const confirmed = await query('西岸');
+  assert.equal(confirmed.status, 200);
+  assert.deepEqual(await confirmed.json(), { receipt:'GH1', object:'P11', point:'西岸', claim:'A7', time:'12:06' });
+});
