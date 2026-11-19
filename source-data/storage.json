@@ -1,0 +1,57 @@
+[
+  {
+    "record": "storage-1",
+    "availableFrom": 1,
+    "kind": "count",
+    "payload": {
+      "point": "西岸",
+      "inventory": {
+        "BAG-7": [
+          "P11",
+          "P12"
+        ]
+      },
+      "time": "10:30"
+    }
+  },
+  {
+    "record": "storage-2",
+    "availableFrom": 2,
+    "kind": "count",
+    "payload": {
+      "point": "西岸",
+      "inventory": {
+        "BAG-9": [
+          "P11"
+        ]
+      },
+      "time": "11:42"
+    }
+  },
+  {
+    "record": "storage-3",
+    "availableFrom": 2,
+    "kind": "count",
+    "payload": {
+      "point": "东岸",
+      "inventory": {
+        "BAG-10": [
+          "P12"
+        ]
+      },
+      "time": "11:55"
+    }
+  },
+  {
+    "record": "storage-4",
+    "availableFrom": 3,
+    "kind": "released",
+    "payload": {
+      "receipt": "GH1",
+      "object": "P11",
+      "point": "西岸",
+      "claim": "A7",
+      "time": "12:06"
+    }
+  }
+]

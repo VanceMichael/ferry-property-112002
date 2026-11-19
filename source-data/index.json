@@ -1,9 +1,8 @@
 {
   "sources": [
-    "sailing",
-    "ship",
-    "tickets",
-    "connection"
+    "cabin",
+    "storage",
+    "counters"
   ],
   "stages": 4,
   "originals": [],

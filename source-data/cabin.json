@@ -1,0 +1,72 @@
+[
+  {
+    "record": "cabin-1",
+    "availableFrom": 1,
+    "kind": "find",
+    "payload": {
+      "leg": "F11-上",
+      "zone": "仓东",
+      "object": "P11",
+      "bag": "BAG-7",
+      "type": "耳机盒",
+      "color": "灰",
+      "feature": "星形划痕"
+    }
+  },
+  {
+    "record": "cabin-2",
+    "availableFrom": 1,
+    "kind": "find",
+    "payload": {
+      "leg": "F11-上",
+      "zone": "仓西",
+      "object": "P12",
+      "bag": "BAG-7",
+      "type": "耳机盒",
+      "color": "灰",
+      "feature": "红色小贴"
+    }
+  },
+  {
+    "record": "cabin-3",
+    "availableFrom": 1,
+    "kind": "find",
+    "payload": {
+      "leg": "F11-下",
+      "zone": "仓东",
+      "object": "P13",
+      "bag": "BAG-8",
+      "type": "耳机盒",
+      "color": "灰",
+      "feature": "红色小贴"
+    }
+  },
+  {
+    "record": "cabin-4",
+    "availableFrom": 2,
+    "kind": "split",
+    "payload": {
+      "receipt": "FQ1",
+      "from": "BAG-7",
+      "to": {
+        "P11": "BAG-9",
+        "P12": "BAG-10"
+      },
+      "time": "11:30"
+    }
+  },
+  {
+    "record": "cabin-5",
+    "availableFrom": 4,
+    "kind": "split",
+    "payload": {
+      "receipt": "FQ9",
+      "from": "BAG-7",
+      "to": {
+        "P12": "BAG-11"
+      },
+      "time": "11:29",
+      "revisionOf": "FQ1"
+    }
+  }
+]

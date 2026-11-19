@@ -1,0 +1,58 @@
+[
+  {
+    "record": "counters-1",
+    "availableFrom": 1,
+    "kind": "claim",
+    "payload": {
+      "claim": "A7",
+      "point": "西岸",
+      "leg": "F11-上",
+      "type": "耳机盒",
+      "publicFields": {
+        "color": "灰"
+      },
+      "checked": "星形划痕"
+    }
+  },
+  {
+    "record": "counters-2",
+    "availableFrom": 1,
+    "kind": "claim",
+    "payload": {
+      "claim": "A8",
+      "point": "东岸",
+      "leg": "F11-上",
+      "type": "耳机盒",
+      "publicFields": {
+        "color": "灰"
+      },
+      "checked": "红色小贴"
+    }
+  },
+  {
+    "record": "counters-3",
+    "availableFrom": 2,
+    "kind": "reserve",
+    "payload": {
+      "claim": "A7",
+      "object": "P11",
+      "point": "西岸",
+      "expires": "12:30"
+    }
+  },
+  {
+    "record": "counters-4",
+    "availableFrom": 3,
+    "kind": "claim",
+    "payload": {
+      "claim": "A9",
+      "point": "东岸",
+      "leg": "F11-上",
+      "type": "耳机盒",
+      "publicFields": {
+        "color": "灰"
+      },
+      "checked": "星形划痕"
+    }
+  }
+]

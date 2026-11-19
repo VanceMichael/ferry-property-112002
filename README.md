@@ -1,4 +1,4 @@
-# 客滚联程改靠后的接驳确认的演练来源
+# 轮渡遗留物的双岸交接与领取核验的演练来源
 
 这里提供独立来源的本地合成记录，与实际单位、个人和线上业务无关。
 
@@ -12,10 +12,9 @@
 
 | GET 路由 | 来源约定 |
 | --- | --- |
-| `/source/sailing` | 航线键下的停靠序号在改靠前后相同。time 使用北京时间和当天 24 小时制。未带 skipped 标记的 alternate 是换岸点。 |
-| `/source/ship` | shipRun 的作用域是码头终端和当天。scan 是码头出具的通行记录键。kind=out 表示实际离船。 |
-| `/source/tickets` | 每行是一份下船联，seatType 表示是否需要有无障碍设施的座位。 |
-| `/source/connection` | 车次的 seats 为具名座位。rank 数字较小的岸点分派规则先处理，已签收的人保留座位直到有点名更正。 |
+| `/source/cabin` | 位置只在航次内有意义。物件 P 和外袋 BAG 是独立身份。分类和私下核验字段由清舱人员登记。 |
+| `/source/storage` | count 只证实列出的袋与物件。released 表示实物离库，该编号不再可领。 |
+| `/source/counters` | 申请点不能替代物件实际保管地。checked 属私下核验部分，publicFields 可向查询者展示。 |
 
 查询参数 `offset` 是从零开始的页偏移，`limit` 默认 3，取值 1 至 100。响应中的 `records` 含 `record` 来源记录键、`availableFrom` 首次出现的回放阶段、`kind` 记录类型、`payload` 业务字段。来源记录键与业务身份分别定义。`next` 为下一页偏移，末页为 `null`。回放阶段中的记录按到达顺序可查。
 
