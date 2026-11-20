@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node source-server.mjs",
+    "desk": "node desk-server.mjs",
     "test": "node --test *.test.mjs"
   }
 }
